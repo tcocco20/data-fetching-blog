@@ -10,9 +10,9 @@ type BlogPostsProps = {
 
 export default function BlogPosts({ posts }: BlogPostsProps) {
   return (
-    <div id="blog-posts">
-      <h1>Blog Posts</h1>
-      <ul>
+    <div id="blog-posts" className="mx-auto container">
+      <h1 className="text-3xl text-white font-semibold">Blog Posts</h1>
+      <ul className="bg-neutral-800">
         {posts.map((post) => (
           <li key={post.id}>
             <h2>{post.title}</h2>

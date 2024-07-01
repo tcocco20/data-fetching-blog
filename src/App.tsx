@@ -41,13 +41,18 @@ function App() {
   }
 
   return (
-    <main className="w-full h-full bg-zinc-900">
-      <Image
-        className="h-32 w-32 object-cover border-2 border-white rounded-full my-8 mx-auto"
-        src={fetchingImage}
-        alt="An abstract image depicting data fetching"
-      />
-      {content}
+    <main className="w-full h-full bg-zinc-900 py-8">
+      <div className="w-1/2 mx-auto flex flex-col content-center gap-10">
+        <Image
+          className="h-32 w-32 object-cover border-2 border-white rounded-full shadow-[0_0_12px_rgb(161,236,251)_!important]"
+          src={fetchingImage}
+          classNames={{
+            wrapper: "mx-auto",
+          }}
+          alt="An abstract image depicting data fetching"
+        />
+        {content}
+      </div>
     </main>
   );
 }
